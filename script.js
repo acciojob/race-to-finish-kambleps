@@ -4,7 +4,7 @@ window.promises = [];
 // add your promises to the array `promises`
 let output = document.getElementById('output');
 
-let primise1 = new Promise((resolve,reject)=>{
+let promise1 = new Promise((resolve,reject)=>{
 	setTimeout(() => resolve ("promise1"),Math.floor(Math.random()*5 +1)*1000)
 	})
 
