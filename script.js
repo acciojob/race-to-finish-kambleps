@@ -24,10 +24,10 @@ let promise5 = new Promise((resolve,reject) => {
 	setTimeout(() => resolve("promise5"),Math.floor(Math.random()*5+1)*1000)
 })
 
-promises.push(primise1);
-promises.push(primise2);
-promises.push(primise3);
-promises.push(primise4);
-promises.push(primise5);
+promises.push(promise1);
+promises.push(promise2);
+promises.push(promise3);
+promises.push(promise4);
+promises.push(promise5);
 
 Promise.any(promises).then((res) => output.innerHTML = res)
